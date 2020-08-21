@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="main.ProductSaveController" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="inputName" layoutX="24.0" layoutY="30.0" promptText="Product name" />
+            <TextField fx:id="inputPrice" layoutX="24.0" layoutY="74.0" promptText="Price" />
+            <TextField fx:id="inputCurrencyCode" layoutX="196.0" layoutY="74.0" promptText="Currency code" />
+            <TextField fx:id="inputQuantity" layoutX="24.0" layoutY="122.0" promptText="Quantity" />
+            <TextField fx:id="inputExpDate" layoutX="24.0" layoutY="175.0" promptText="Exp date as yyyy-mm-dd" />
+            <TextField fx:id="inputManufactured" layoutX="24.0" layoutY="222.0" promptText="Manufactured in" />
+            <TextField fx:id="inputCategory" layoutX="24.0" layoutY="273.0" promptText="Category" />
+            <Button onAction="#saveProduct" layoutX="24.0" layoutY="338.0" mnemonicParsing="false" text="Save" />
+            <Button onAction="#loadProduct" layoutX="89.0" layoutY="338.0" mnemonicParsing="false" text="Load" />
+         </children></AnchorPane>
+  </children>
+</VBox>
